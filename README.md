@@ -34,7 +34,6 @@ To run the application, make sure you have the Stackato client installed and tha
 
 Then execute:
 
-	mvn clean package
 	stackato push -n 
 
 Notice that it detected the app type as "Java Web Application". In this case, it's only recognizing a runtime (Java)
