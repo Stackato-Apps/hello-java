@@ -2,4 +2,4 @@
 applications:
   target:
     name: hello-java
-    mem: 256M
+    mem: 512M
