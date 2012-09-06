@@ -17,6 +17,8 @@ public class HelloServlet extends HttpServlet {
 		response.setStatus(200);
 		PrintWriter writer = response.getWriter();
 		writer.println("Hello from " + System.getenv("VCAP_APP_HOST") + ":" + System.getenv("VCAP_APP_PORT"));
+		System.out.println("Hello, this a test to test the log test!");
+		System.err.println("Hello, this is a ERRRRR TEST!!");
 		writer.close();
 	}
 }
