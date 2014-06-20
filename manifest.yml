@@ -1,5 +1,5 @@
 ---
-applications:
-  target:
-    name: hello-java
-    mem: 512M
+applications: 
+- name: hello-java
+  mem: 512M
+  path: target/hello-java-1.0
