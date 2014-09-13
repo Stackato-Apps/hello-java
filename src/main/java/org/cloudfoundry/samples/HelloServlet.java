@@ -16,7 +16,15 @@ public class HelloServlet extends HttpServlet {
 		response.setContentType("text/plain");
 		response.setStatus(200);
 		PrintWriter writer = response.getWriter();
-		writer.println("Hello from " + System.getenv("VCAP_APP_HOST") + ":" + System.getenv("VCAP_APP_PORT"));
+		String ssh_client_info = System.getenv("SSH_CONNECTION");
+		String ip_addr = System.getenv("VCAP_APP_HOST");
+		if (ip_addr.equals("0.0.0.0")) {
+			int hubEnd = ssh_client_info.indexOf(" ");
+			int portEnd = ssh_client_info.indexOf(" ", hubEnd + 1);
+			int dockerIPAddressEnd = ssh_client_info.indexOf(" ", portEnd + 1);
+			ip_addr = ssh_client_info.substring(portEnd + 1, dockerIPAddressEnd);
+		}
+		writer.println("Hello from " + ip_addr + ":" + System.getenv("VCAP_APP_PORT"));
 		writer.close();
 	}
 }
