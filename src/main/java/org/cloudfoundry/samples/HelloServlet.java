@@ -27,7 +27,7 @@ public class HelloServlet extends HttpServlet {
 			ip_addr = ssh_client_info.substring(portEnd + 1, dockerIPAddressEnd);
 		}
 
-		writer.println("gopaddle v " + ip_addr + ":" + System.getenv("VCAP_APP_PORT"));
+		writer.println("gopaddle vino " + ip_addr + ":" + System.getenv("VCAP_APP_PORT"));
 		writer.close();
 	}
 }
