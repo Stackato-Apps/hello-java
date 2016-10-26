@@ -1,4 +1,4 @@
-Hello Java Sample test commt with
+Hello Java Sample test commt with commit added in issue of jira
 jira test commit for repourl validation
 =================
 
