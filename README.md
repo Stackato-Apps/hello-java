@@ -1,4 +1,5 @@
 Hello Java Sample test commt with commit added in issue of jira
+avoid open Issues Commit in jira
 jira test commit for repourl validation
 =================
 
