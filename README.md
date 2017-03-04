@@ -1,4 +1,6 @@
-Hello Java Sample
+Hello Java Sample test commt with commit added in issue of jira1a
+avoid open Issues Commit in jira
+jira test commit for repourl validation
 =================
 
 This sample (originally based on the [SpringSource sample](https://github.com/SpringSource/cloudfoundry-samples/tree/master/hello-java)) aims to demonstrate the simplest possible Servlet-based Java webapp. Here we walk through the entire content of the application.
@@ -31,4 +33,4 @@ The result when visiting the 'Application Deployed URL' should look something li
 
 	Hello from 172.30.49.150:20488
 
-That's all. Have fun!
+That's all. Have fun!***
